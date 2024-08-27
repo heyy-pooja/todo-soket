@@ -2,8 +2,8 @@ const { readTodos, createTodos, updateTodos, deleteTodos } = require("../control
 
 const router = require("express").Router()
 router
-    .get("/", readTodos)
-    .post("/add", createTodos)
+    .get("/", createTodos)
+    .post("/add", readTodos)
     .put("/update/:id", updateTodos)
     .delete("/delete/:id", deleteTodos)
 
